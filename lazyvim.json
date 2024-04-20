@@ -1,6 +1,7 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.formatting.prettier"
   ],
   "news": {
     "NEWS.md": "3415"
