@@ -3,7 +3,14 @@ return {
     "folke/tokyonight.nvim",
     lazy = true,
     priority = 1000,
-    opts = { style = "moon" },
+    opts = {
+      -- transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      -- },
+      style = "moon" 
+    },
   },
   {
     "LazyVim/LazyVim",

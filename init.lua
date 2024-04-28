@@ -7,11 +7,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
--- Helper function for transparency formatting
-local alpha = function()
-    return string.format("%x", math.floor(255 * vim.g.transparency or 0.8))
-  end
-  -- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
+
   vim.o.guifont = "Operator Mono:h14:i" -- text below applies for VimScript
 
   vim.g.neovide_scale_factor = 1.0
@@ -37,10 +33,3 @@ end)
   vim.g.neovide_cursor_vfx_particle_speed = 50.0
 --   vim.g.neovide_cursor_vfx_particle_phase = 1.5
 --   vim.g.neovide_cursor_vfx_particle_curl = 1.0
-
-
-  
-
-
-
-
