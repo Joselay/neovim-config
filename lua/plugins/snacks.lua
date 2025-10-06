@@ -78,7 +78,7 @@ return {
             { "   ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝", hl = "SnacksDashboardHeader6" },
           },
           align = "center",
-          padding = 2,
+          padding = 3,
         },
         { section = "keys", indent = 2, padding = 3, gap = 1 },
         { section = "startup" },
