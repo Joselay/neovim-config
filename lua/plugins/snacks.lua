@@ -29,14 +29,14 @@ return {
       preset = {
         -- Custom keybindings for dashboard
         keys = {
-          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
-          { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-          { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
-          { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
-          { icon = " ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
-          { icon = " ", key = "s", desc = "Restore Session", action = ":lua require('persistence').load()" },
+          { icon = "󰈞 ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
+          { icon = "󰈔 ", key = "n", desc = "New File", action = ":ene | startinsert" },
+          { icon = "󰋚 ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+          { icon = "󰱼 ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
+          { icon = "󰒓 ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
+          { icon = "󰁯 ", key = "s", desc = "Restore Session", action = ":lua require('persistence').load()" },
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
-          { icon = " ", key = "q", desc = "Quit", action = ":qa" },
+          { icon = "󰈆 ", key = "q", desc = "Quit", action = ":qa" },
         },
       },
 
@@ -45,37 +45,37 @@ return {
         -- Rainbow gradient header (red → peach → yellow → green → blue → mauve)
         {
           text = {
-            { "     ███╗   ██╗ ███████╗  ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗", hl = "SnacksDashboardHeader1" },
+            { "   ███╗   ██╗ ███████╗  ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗", hl = "SnacksDashboardHeader1" },
           },
           align = "center",
         },
         {
           text = {
-            { "     ████╗  ██║ ██╔════╝ ██╔═══██╗ ██║   ██║ ██║ ████╗ ████║", hl = "SnacksDashboardHeader2" },
+            { "   ████╗  ██║ ██╔════╝ ██╔═══██╗ ██║   ██║ ██║ ████╗ ████║", hl = "SnacksDashboardHeader2" },
           },
           align = "center",
         },
         {
           text = {
-            { "     ██╔██╗ ██║ █████╗   ██║   ██║ ██║   ██║ ██║ ██╔████╔██║", hl = "SnacksDashboardHeader3" },
+            { "   ██╔██╗ ██║ █████╗   ██║   ██║ ██║   ██║ ██║ ██╔████╔██║", hl = "SnacksDashboardHeader3" },
           },
           align = "center",
         },
         {
           text = {
-            { "     ██║╚██╗██║ ██╔══╝   ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║", hl = "SnacksDashboardHeader4" },
+            { "   ██║╚██╗██║ ██╔══╝   ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║", hl = "SnacksDashboardHeader4" },
           },
           align = "center",
         },
         {
           text = {
-            { "     ██║ ╚████║ ███████╗ ╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║", hl = "SnacksDashboardHeader5" },
+            { "   ██║ ╚████║ ███████╗ ╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║", hl = "SnacksDashboardHeader5" },
           },
           align = "center",
         },
         {
           text = {
-            { "     ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝", hl = "SnacksDashboardHeader6" },
+            { "   ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝", hl = "SnacksDashboardHeader6" },
           },
           align = "center",
           padding = 2,
