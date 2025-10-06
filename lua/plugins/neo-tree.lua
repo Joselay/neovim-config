@@ -18,6 +18,11 @@ return {
         },
         hijack_netrw_behavior = "open_current",
         use_libuv_file_watcher = true,
+        filtered_items = {
+          visible = true, -- Show hidden files
+          hide_dotfiles = false,
+          hide_gitignored = false,
+        },
       },
       buffers = {
         follow_current_file = {
