@@ -10,22 +10,28 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
+        -- Neovim config
         "lua",
         "vim",
         "vimdoc",
+        -- Flutter
+        "dart",
+        -- Next.js/Nest.js/Vue.js
         "javascript",
         "typescript",
         "tsx",
+        "vue",
+        -- Web
         "html",
         "css",
+        -- Config/Data
         "json",
         "yaml",
         "markdown",
         "markdown_inline",
-        "python",
-        "go",
-        "rust",
+        -- DevOps
         "bash",
+        "dockerfile",
       },
       auto_install = true,
       highlight = {

@@ -44,14 +44,24 @@ return {
       -- Setup mason-lspconfig
       mason_lspconfig.setup({
         ensure_installed = {
-          "lua_ls",
+          -- Next.js/Nest.js/Vue.js
           "ts_ls",
+          "vuels", -- Vue.js Language Server
+          "eslint",
+          -- Web
           "html",
           "cssls",
           "tailwindcss",
-          "pyright",
-          "gopls",
-          "rust_analyzer",
+          -- Config/Data
+          "jsonls",
+          "yamlls",
+          "prismals",
+          "marksman", -- Markdown LSP
+          -- DevOps
+          "dockerls",
+          "docker_compose_language_service",
+          -- Neovim config
+          "lua_ls",
         },
       })
 
@@ -75,7 +85,20 @@ return {
       })
 
       -- Setup other servers with default config using vim.lsp.config
-      local servers = { "ts_ls", "html", "cssls", "tailwindcss", "pyright", "gopls", "rust_analyzer" }
+      local servers = {
+        "ts_ls",
+        "vuels",
+        "eslint",
+        "html",
+        "cssls",
+        "tailwindcss",
+        "jsonls",
+        "yamlls",
+        "prismals",
+        "marksman",
+        "dockerls",
+        "docker_compose_language_service",
+      }
       for _, server in ipairs(servers) do
         vim.lsp.config(server, {
           capabilities = capabilities,
@@ -83,7 +106,21 @@ return {
       end
 
       -- Enable LSP servers
-      vim.lsp.enable({ "lua_ls", "ts_ls", "html", "cssls", "tailwindcss", "pyright", "gopls", "rust_analyzer" })
+      vim.lsp.enable({
+        "lua_ls",
+        "ts_ls",
+        "vuels",
+        "eslint",
+        "html",
+        "cssls",
+        "tailwindcss",
+        "jsonls",
+        "yamlls",
+        "prismals",
+        "marksman",
+        "dockerls",
+        "docker_compose_language_service",
+      })
     end,
   },
 }

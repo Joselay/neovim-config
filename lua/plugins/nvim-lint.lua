@@ -5,13 +5,19 @@ return {
     local lint = require("lint")
 
     lint.linters_by_ft = {
+      -- Flutter (Dart analysis via LSP)
+      -- Next.js/Nest.js/Vue.js
       javascript = { "eslint_d" },
       typescript = { "eslint_d" },
       javascriptreact = { "eslint_d" },
       typescriptreact = { "eslint_d" },
-      python = { "pylint" },
-      go = { "golangcilint" },
-      lua = { "luacheck" },
+      vue = { "eslint_d" },
+      -- Markdown
+      markdown = { "markdownlint-cli2" },
+      -- DevOps
+      dockerfile = { "hadolint" },
+      sh = { "shellcheck" },
+      bash = { "shellcheck" },
     }
 
     -- Auto-lint on save and text change
