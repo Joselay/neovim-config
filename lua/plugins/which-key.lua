@@ -9,7 +9,7 @@ return {
 
     -- Register leader key groups for better organization
     wk.add({
-      { "<leader>f", group = "Find" },
+      { "<leader>f", group = "Find/Flutter" },
       { "<leader>s", group = "Split" },
       { "<leader>t", group = "Tab" },
       { "<leader>b", group = "Buffer" },

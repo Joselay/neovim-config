@@ -6,19 +6,28 @@ return {
 
     conform.setup({
       formatters_by_ft = {
+        -- Flutter (Dart has built-in formatter via LSP)
+        dart = { "dart_format" },
+        -- Next.js/Nest.js/Vue.js
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
+        vue = { "prettier" },
+        -- Web
         css = { "prettier" },
         html = { "prettier" },
+        -- Config/Data
         json = { "prettier" },
         yaml = { "prettier" },
         markdown = { "prettier" },
+        prisma = { "prettier" },
+        -- Neovim config
         lua = { "stylua" },
-        python = { "isort", "black" },
-        go = { "goimports", "gofmt" },
-        rust = { "rustfmt" },
+        -- DevOps
+        sh = { "shfmt" },
+        bash = { "shfmt" },
+        dockerfile = { "prettier" },
       },
       format_on_save = {
         lsp_fallback = true,
