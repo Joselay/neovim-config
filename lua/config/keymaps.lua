@@ -34,8 +34,8 @@ keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Go to previous tab" })
 
 -- Buffer management
 keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
-keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "Next buffer" })
-keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "]b", ":bnext<CR>", { desc = "Next buffer" })
+keymap.set("n", "[b", ":bprevious<CR>", { desc = "Previous buffer" })
 
 -- Better indenting
 keymap.set("v", "<", "<gv", { desc = "Indent left" })
@@ -55,5 +55,5 @@ keymap.set("n", "N", "Nzzzv", { desc = "Previous search result centered" })
 keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without yanking" })
 
 -- Delete without yanking
-keymap.set("n", "<leader>d", '"_d', { desc = "Delete without yanking" })
-keymap.set("v", "<leader>d", '"_d', { desc = "Delete without yanking" })
+keymap.set("n", "<leader>x", '"_d', { desc = "Delete without yanking" })
+keymap.set("v", "<leader>x", '"_d', { desc = "Delete without yanking" })
