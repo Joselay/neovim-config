@@ -3,7 +3,7 @@ return {
   priority = 1000,
   lazy = false,
   config = function()
-    -- Setup custom highlight groups for dashboard with gradient
+    -- Setup custom highlight groups for dashboard with rainbow gradient
     vim.api.nvim_set_hl(0, "SnacksDashboardHeader1", { fg = "#f38ba8", bold = true }) -- Catppuccin red
     vim.api.nvim_set_hl(0, "SnacksDashboardHeader2", { fg = "#fab387", bold = true }) -- Catppuccin peach
     vim.api.nvim_set_hl(0, "SnacksDashboardHeader3", { fg = "#f9e2af", bold = true }) -- Catppuccin yellow
@@ -42,7 +42,7 @@ return {
 
       -- Dashboard sections layout
       sections = {
-        -- Custom gradient header using text sections
+        -- Rainbow gradient header (red → peach → yellow → green → blue → mauve)
         {
           text = {
             { " ███╗   ██╗ ███████╗  ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗", hl = "SnacksDashboardHeader1" },
