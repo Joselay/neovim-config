@@ -1,7 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "master", -- Use stable master branch (not main rewrite which requires Neovim 0.11+)
   build = ":TSUpdate",
-  event = { "BufReadPre", "BufNewFile" },
+  lazy = false,
   dependencies = {
     "nvim-treesitter/nvim-treesitter-textobjects",
     "windwp/nvim-ts-autotag",
