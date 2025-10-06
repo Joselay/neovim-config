@@ -45,37 +45,37 @@ return {
         -- Rainbow gradient header (red → peach → yellow → green → blue → mauve)
         {
           text = {
-            { " ███╗   ██╗ ███████╗  ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗", hl = "SnacksDashboardHeader1" },
+            { "     ███╗   ██╗ ███████╗  ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗", hl = "SnacksDashboardHeader1" },
           },
           align = "center",
         },
         {
           text = {
-            { " ████╗  ██║ ██╔════╝ ██╔═══██╗ ██║   ██║ ██║ ████╗ ████║", hl = "SnacksDashboardHeader2" },
+            { "     ████╗  ██║ ██╔════╝ ██╔═══██╗ ██║   ██║ ██║ ████╗ ████║", hl = "SnacksDashboardHeader2" },
           },
           align = "center",
         },
         {
           text = {
-            { " ██╔██╗ ██║ █████╗   ██║   ██║ ██║   ██║ ██║ ██╔████╔██║", hl = "SnacksDashboardHeader3" },
+            { "     ██╔██╗ ██║ █████╗   ██║   ██║ ██║   ██║ ██║ ██╔████╔██║", hl = "SnacksDashboardHeader3" },
           },
           align = "center",
         },
         {
           text = {
-            { " ██║╚██╗██║ ██╔══╝   ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║", hl = "SnacksDashboardHeader4" },
+            { "     ██║╚██╗██║ ██╔══╝   ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║", hl = "SnacksDashboardHeader4" },
           },
           align = "center",
         },
         {
           text = {
-            { " ██║ ╚████║ ███████╗ ╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║", hl = "SnacksDashboardHeader5" },
+            { "     ██║ ╚████║ ███████╗ ╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║", hl = "SnacksDashboardHeader5" },
           },
           align = "center",
         },
         {
           text = {
-            { " ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝", hl = "SnacksDashboardHeader6" },
+            { "     ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝", hl = "SnacksDashboardHeader6" },
           },
           align = "center",
           padding = 1,
