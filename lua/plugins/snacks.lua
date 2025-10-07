@@ -82,13 +82,6 @@ return {
         },
         { section = "keys", indent = 2, padding = 3, gap = 1 },
         { section = "startup" },
-        {
-          text = {
-            { "  Code with purpose, build with passion  ", hl = "SnacksDashboardFooter" },
-          },
-          padding = 1,
-          align = "center",
-        },
       },
     },
 
