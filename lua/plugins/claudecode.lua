@@ -15,10 +15,15 @@ return {
 
     -- Terminal Configuration
     terminal = {
-      split_side = "right",
-      split_width_percentage = 0.30,
       provider = "auto", -- Will use snacks.nvim if available
       auto_close = true,
+      snacks_win_opts = {
+        position = "float",
+        width = 0.85,
+        height = 0.85,
+        border = "rounded",
+        backdrop = 60,
+      },
     },
 
     -- Diff Integration
